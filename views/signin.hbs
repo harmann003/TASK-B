@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel=" stylesheet" href="/public/style1.css">
+</head>
+
+<body>
+
+    <div class="textbox">
+        <p>Join our community to make<br> your dream come true.<br>Serving you the best customized bikes!!!</p>
+    </div>
+
+    <div class="container">
+        <div class="form-box" style="border: white; border-width: 3 px;">
+            <h1>Sign In</h1>
+            <form method="post" action="/signin">
+                <div class="input-group">
+
+                    <div class="input-field">
+                        <input type="email" placeholder="Email" name="email" onfocus="this.placeholder='' "
+                            onblur="this.placeholder='Email'">
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" placeholder="Password" name="password" onfocus="this.placeholder='' "
+                            onblur="this.placeholder='Password'">
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <a href="/signup"
+                        style="width: 120px; border-radius:20px; padding-top:10px; font-size: 0.9em; text-decoration:none;"
+                        id="btn2"> Sign up</a>
+                    <button id="btn1">Sign In</button>
+                </div>
+            </form>
+            <a href="/contactus"
+                style="display:inline-block; width: 120px; border-radius:20px; margin:20px; padding:10px; font-size: 0.9em; text-decoration:none;background-color:white;">Contact
+                Us</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

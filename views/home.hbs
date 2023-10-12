@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <title>EatnTreat</title>
+
+  <link href="/public/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <nav class="bg-red-800 h-[130px] pt-5">
+      <ul class="tm-nav-ul">
+        <li class="tm-nav-li"><a href="/" class="tm-nav-link active">Home</a></li>
+        <li class="tm-nav-li"><a href="/signout" class="tm-nav-link">Signout</a></li>
+        <li class="tm-nav-li"><a href="/contactus" class="tm-nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="row tm-gallery">
+
+    </div>
+  </main>
+  <footer>
+    <script src="/public/js/jquery.min.js"></script>
+    <script src="/public/js/parallax.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Handle click on paging links
+        $('.tm-paging-link').click(function (e) {
+          e.preventDefault();
+
+          var page = $(this).text().toLowerCase();
+          $('.tm-gallery-page').addClass('hidden');
+          $('#tm-gallery-page-' + page).removeClass('hidden');
+          $('.tm-paging-link').removeClass('active');
+          $(this).addClass("active");
+        });
+      });
+    </script>
+
+  </footer>
+</body>
+
+</html>
